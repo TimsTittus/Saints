@@ -1,0 +1,3 @@
+{
+  "extends": "@Saints/config/tsconfig.base.json"
+}
