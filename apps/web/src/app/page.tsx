@@ -108,17 +108,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Filter bar */}
-      <FilterBar
-        filters={filters}
-        onFiltersChange={handleFiltersChange}
-        availableLetters={availableLetters}
-        viewMode={viewMode}
-        onViewModeChange={setViewMode}
-        totalCount={ALL_SAINTS.length}
-        filteredCount={filtered.length}
-      />
-
       {/* Saint grid / map */}
       <section
         id="saints"
@@ -131,6 +120,17 @@ export default function HomePage() {
           <SaintGrid saints={filtered} viewMode={viewMode as "grid" | "alpha"} />
         )}
       </section>
+
+      {/* Filter bar */}
+      <FilterBar
+        filters={filters}
+        onFiltersChange={handleFiltersChange}
+        availableLetters={availableLetters}
+        viewMode={viewMode}
+        onViewModeChange={setViewMode}
+        totalCount={ALL_SAINTS.length}
+        filteredCount={filtered.length}
+      />
     </>
   );
 }
