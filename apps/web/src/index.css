@@ -1,1 +1,314 @@
 @import "@Saints/ui/globals.css";
+@import "leaflet/dist/leaflet.css";
+
+/* ─── Design Tokens ─── */
+:root {
+  --saints-gold: oklch(72% 0.12 80);
+  --saints-gold-muted: oklch(72% 0.06 80);
+  --saints-gold-pale: oklch(96% 0.03 80);
+  --saints-glass-bg: oklch(100% 0 0 / 0.7);
+  --saints-glass-border: oklch(100% 0 0 / 0.85);
+  --saints-glass-shadow: 0 8px 32px oklch(30% 0.05 240 / 0.08),
+    0 2px 8px oklch(30% 0.05 240 / 0.04);
+  --saints-glass-shadow-hover: 0 16px 48px oklch(30% 0.05 240 / 0.14),
+    0 4px 12px oklch(30% 0.05 240 / 0.08);
+  --font-serif: "Crimson Pro", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --page-bg: linear-gradient(145deg,
+      oklch(98% 0.005 80) 0%,
+      oklch(100% 0 0) 45%,
+      oklch(98% 0.008 80) 100%);
+  --header-height: 64px;
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Global Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--page-bg);
+  background-attachment: fixed;
+  min-height: 100dvh;
+}
+
+/* ─── Glassmorphic Utilities ─── */
+.glass {
+  background: var(--saints-glass-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--saints-glass-border);
+  box-shadow: var(--saints-glass-shadow);
+}
+
+.glass-hover {
+  transition: box-shadow var(--transition-base), transform var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.glass-hover:hover {
+  box-shadow: var(--saints-glass-shadow-hover);
+  border-color: oklch(80% 0.08 80 / 0.6);
+}
+
+/* ─── Oval Portrait ─── */
+.saint-oval {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid oklch(72% 0.06 80 / 0.35);
+  transition: border-color var(--transition-base), transform var(--transition-base),
+    box-shadow var(--transition-base);
+  will-change: transform;
+}
+
+.saint-oval:hover {
+  border-color: var(--saints-gold);
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 12px 32px oklch(72% 0.12 80 / 0.2);
+}
+
+/* ─── Typography ─── */
+.serif {
+  font-family: var(--font-serif);
+}
+
+.prose-saints {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: oklch(20% 0.01 240);
+}
+
+.prose-saints h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: oklch(15% 0.02 240);
+  border-bottom: 1px solid oklch(72% 0.06 80 / 0.3);
+  padding-bottom: 0.4rem;
+}
+
+.prose-saints h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-saints p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-saints a {
+  color: oklch(55% 0.14 80);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-base);
+}
+
+.prose-saints a:hover {
+  color: var(--saints-gold);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(72% 0.06 80 / 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--saints-gold);
+}
+
+/* ─── Loading Screen ─── */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg,
+      oklch(98% 0.01 80) 0%,
+      oklch(100% 0 0) 50%,
+      oklch(97% 0.015 80) 100%);
+  transition: opacity 600ms ease, visibility 600ms ease;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes halo-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.halo-ring {
+  animation: halo-pulse 2.4s ease-in-out infinite;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg,
+      oklch(55% 0.1 80) 0%,
+      oklch(72% 0.12 80) 40%,
+      oklch(55% 0.1 80) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 2.4s linear infinite;
+}
+
+.float-in {
+  animation: float-in 0.6s ease both;
+}
+
+/* ─── Scroll-driven section reveals ─── */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-on-scroll {
+  animation: reveal-up linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 30%;
+}
+
+/* ─── Alpha letter dividers ─── */
+.alpha-section-letter {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--saints-gold);
+  line-height: 1;
+  opacity: 0.85;
+}
+
+/* ─── Infobox (Wikipedia-style) ─── */
+.infobox {
+  background: oklch(98% 0.01 80 / 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid oklch(88% 0.04 80);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.infobox-header {
+  background: linear-gradient(135deg, oklch(72% 0.1 80 / 0.15), oklch(72% 0.06 80 / 0.08));
+  border-bottom: 1px solid oklch(88% 0.04 80);
+  padding: 1rem;
+  text-align: center;
+}
+
+.infobox-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  border-bottom: 1px solid oklch(92% 0.02 80);
+}
+
+.infobox-row:last-child {
+  border-bottom: none;
+}
+
+.infobox-label {
+  font-weight: 600;
+  color: oklch(45% 0.04 240);
+  white-space: nowrap;
+}
+
+.infobox-value {
+  color: oklch(25% 0.02 240);
+}
+
+/* ─── Leaflet Custom Map Popup Styling ─── */
+.custom-saint-popup .leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.08);
+  padding: 0;
+  overflow: hidden;
+}
+
+.custom-saint-popup .leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-saint-popup .leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+}

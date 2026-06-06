@@ -1,0 +1,244 @@
+[
+  {
+    "id": "anthony-of-padua",
+    "name": "Saint Anthony of Padua",
+    "shortName": "Anthony of Padua",
+    "letter": "A",
+    "category": "Saint",
+    "feastDay": "June 13",
+    "birthYear": 1195,
+    "deathYear": 1231,
+    "country": "Portugal",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 45.4064,
+      "lng": 11.8768
+    },
+    "thumbUrl": "/images/saints/thumbs/anthony-of-padua.png",
+    "patronage": [
+      "lost items",
+      "the poor",
+      "travelers",
+      "Portugal",
+      "Padua"
+    ],
+    "excerpt": "Franciscan friar and Doctor of the Church, renowned for his powerful preaching and as the patron saint of lost things."
+  },
+  {
+    "id": "augustine-of-hippo",
+    "name": "Saint Augustine of Hippo",
+    "shortName": "Augustine of Hippo",
+    "letter": "A",
+    "category": "Doctor",
+    "feastDay": "August 28",
+    "birthYear": 354,
+    "deathYear": 430,
+    "country": "Algeria",
+    "region": "Africa",
+    "coordinates": {
+      "lat": 36.8922,
+      "lng": 7.7539
+    },
+    "thumbUrl": "/images/saints/thumbs/augustine-of-hippo.png",
+    "patronage": [
+      "theologians",
+      "brewers",
+      "printers",
+      "Algeria"
+    ],
+    "excerpt": "Bishop, philosopher, and theologian whose writings on grace, free will, and the Church profoundly shaped Western Christianity."
+  },
+  {
+    "id": "catherine-of-siena",
+    "name": "Saint Catherine of Siena",
+    "shortName": "Catherine of Siena",
+    "letter": "C",
+    "category": "Doctor",
+    "feastDay": "April 29",
+    "birthYear": 1347,
+    "deathYear": 1380,
+    "country": "Italy",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 43.3186,
+      "lng": 11.3306
+    },
+    "thumbUrl": "/images/saints/thumbs/catherine-of-siena.png",
+    "patronage": [
+      "Italy",
+      "Europe",
+      "nurses",
+      "firefighters"
+    ],
+    "excerpt": "Dominican tertiary, mystic, and Doctor of the Church who played a pivotal role in returning the papacy from Avignon to Rome."
+  },
+  {
+    "id": "francis-of-assisi",
+    "name": "Saint Francis of Assisi",
+    "shortName": "Francis of Assisi",
+    "letter": "F",
+    "category": "Saint",
+    "feastDay": "October 4",
+    "birthYear": 1181,
+    "deathYear": 1226,
+    "country": "Italy",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 43.0705,
+      "lng": 12.6175
+    },
+    "thumbUrl": "/images/saints/thumbs/francis-of-assisi.png",
+    "patronage": [
+      "animals",
+      "ecology",
+      "Italy",
+      "merchants"
+    ],
+    "excerpt": "Founder of the Franciscan Order, beloved for his radical poverty, love of nature, and mystical reception of the stigmata."
+  },
+  {
+    "id": "joan-of-arc",
+    "name": "Saint Joan of Arc",
+    "shortName": "Joan of Arc",
+    "letter": "J",
+    "category": "Martyr",
+    "feastDay": "May 30",
+    "birthYear": 1412,
+    "deathYear": 1431,
+    "country": "France",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "thumbUrl": "/images/saints/thumbs/joan-of-arc.png",
+    "patronage": [
+      "France",
+      "soldiers",
+      "prisoners",
+      "women who have been ridiculed for their piety"
+    ],
+    "excerpt": "Teenage peasant girl who led French armies to victory during the Hundred Years' War, guided by divine visions before her martyrdom at 19."
+  },
+  {
+    "id": "mary-magdalene",
+    "name": "Saint Mary Magdalene",
+    "shortName": "Mary Magdalene",
+    "letter": "M",
+    "category": "Saint",
+    "feastDay": "July 22",
+    "birthYear": null,
+    "deathYear": 63,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.7047,
+      "lng": 35.5177
+    },
+    "thumbUrl": "/images/saints/thumbs/mary-magdalene.png",
+    "patronage": [
+      "penitents",
+      "women",
+      "apothecaries",
+      "hairdressers"
+    ],
+    "excerpt": "First witness to the Resurrection of Christ, she was a devoted disciple who journeyed with Jesus and proclaimed His risen glory."
+  },
+  {
+    "id": "patrick-of-ireland",
+    "name": "Saint Patrick of Ireland",
+    "shortName": "Patrick of Ireland",
+    "letter": "P",
+    "category": "Saint",
+    "feastDay": "March 17",
+    "birthYear": 385,
+    "deathYear": 461,
+    "country": "Ireland",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 54.3498,
+      "lng": -6.2664
+    },
+    "thumbUrl": "/images/saints/thumbs/patrick-of-ireland.png",
+    "patronage": [
+      "Ireland",
+      "Nigeria",
+      "engineers",
+      "excluded people"
+    ],
+    "excerpt": "Romano-British missionary who brought Christianity to Ireland, establishing the Church and using the shamrock to explain the Trinity."
+  },
+  {
+    "id": "teresa-of-avila",
+    "name": "Saint Teresa of Ávila",
+    "shortName": "Teresa of Ávila",
+    "letter": "T",
+    "category": "Doctor",
+    "feastDay": "October 15",
+    "birthYear": 1515,
+    "deathYear": 1582,
+    "country": "Spain",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 40.6564,
+      "lng": -4.6998
+    },
+    "thumbUrl": "/images/saints/thumbs/teresa-of-avila.png",
+    "patronage": [
+      "Spain",
+      "chess players",
+      "lace makers",
+      "headache sufferers"
+    ],
+    "excerpt": "Carmelite mystic, reformer, and first woman declared Doctor of the Church, whose writings on interior prayer remain foundational."
+  },
+  {
+    "id": "therese-of-lisieux",
+    "name": "Saint Thérèse of Lisieux",
+    "shortName": "Thérèse of Lisieux",
+    "letter": "T",
+    "category": "Doctor",
+    "feastDay": "October 1",
+    "birthYear": 1873,
+    "deathYear": 1897,
+    "country": "France",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 49.1458,
+      "lng": 0.2213
+    },
+    "thumbUrl": "/images/saints/thumbs/therese-of-lisieux.png",
+    "patronage": [
+      "missions",
+      "France",
+      "Russia",
+      "florists",
+      "aviators"
+    ],
+    "excerpt": "The 'Little Flower' who taught the spiritual path of childlike trust and small sacrifices, becoming one of history's most beloved saints."
+  },
+  {
+    "id": "thomas-aquinas",
+    "name": "Saint Thomas Aquinas",
+    "shortName": "Thomas Aquinas",
+    "letter": "T",
+    "category": "Doctor",
+    "feastDay": "January 28",
+    "birthYear": 1225,
+    "deathYear": 1274,
+    "country": "Italy",
+    "region": "Europe",
+    "coordinates": {
+      "lat": 41.4856,
+      "lng": 13.8236
+    },
+    "thumbUrl": "/images/saints/thumbs/thomas-aquinas.png",
+    "patronage": [
+      "students",
+      "scholars",
+      "universities",
+      "booksellers"
+    ],
+    "excerpt": "Dominican friar and supreme theologian of the Catholic Church, whose Summa Theologica synthesized faith and reason into a masterwork of scholasticism."
+  }
+]
