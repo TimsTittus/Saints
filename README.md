@@ -1,70 +1,42 @@
-# Saints
+# Sancti — The Catholic Saints Encyclopedia
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, Self, and more.
+A premium, modern web application mapping the lives, patronages, and shrines of Catholic saints, blesseds, and martyrs across every era and region of the world.
 
-## Features
+---
 
-- **TypeScript** - For type safety and improved developer experience
-- **Next.js** - Full-stack React framework
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **Shared UI package** - shadcn/ui primitives live in `packages/ui`
-- **Turborepo** - Optimized monorepo build system
+## Key Features
 
-## Getting Started
+- **Interactive Sacred Map** — Leaflet-powered map displaying saint birthplaces/shrines with a custom React detail modal and fluid fullscreen viewport toggle.
+- **Dynamic Layout Perspectives** — Easily switch between **Grid Card View**, **A–Z Alphabetical Catalog**, and **Geographic Map View**.
+- **Contextual Search & Filters** — Sticky filter bar supporting text query search, letter indexing, category classification, regional mapping, and historical era filters.
+- **Rich Hagiographies** — Immersive biographies built dynamically using static MDX templates and responsive metadata infoboxes.
+- **Dual Themes** — Full dark and light mode styling with premium glassmorphism accents.
 
-First, install the dependencies:
+---
 
-```bash
-bun install
-```
+## Tech Stack
 
-Then, run the development server:
+- **Framework:** Next.js 16 (App Router with Turbopack)
+- **Monorepo Build System:** Turborepo & Bun Workspaces
+- **Styling:** Vanilla CSS with custom OKLCH design tokens & TailwindCSS utilities
+- **Map Library:** Leaflet (Client-side dynamic integration)
+- **Shared UI Library:** shadcn/ui primitives (`packages/ui`)
 
-```bash
-bun run dev
-```
+---
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the fullstack application.
+## Directory Structure
 
-## UI Customization
-
-React web apps in this stack share shadcn/ui primitives through `packages/ui`.
-
-- Change design tokens and global styles in `packages/ui/src/styles/globals.css`
-- Update shared primitives in `packages/ui/src/components/*`
-- Adjust shadcn aliases or style config in `packages/ui/components.json` and `apps/web/components.json`
-
-### Add more shared components
-
-Run this from the project root to add more primitives to the shared UI package:
-
-```bash
-npx shadcn@latest add accordion dialog popover sheet table -c packages/ui
-```
-
-Import shared components like this:
-
-```tsx
-import { Button } from "@Saints/ui/components/button";
-```
-
-### Add app-specific blocks
-
-If you want to add app-specific blocks instead of shared primitives, run the shadcn CLI from `apps/web`.
-
-## Project Structure
-
-```
+```text
 Saints/
 ├── apps/
-│   └── web/         # Fullstack application (Next.js)
-├── packages/
-│   ├── ui/          # Shared shadcn/ui components and styles
+│   └── web/           # Next.js web application
+│       ├── public/    # Static assets (portraits & maps)
+│       └── src/
+│           ├── app/   # Router pages & detail hagiographies
+│           ├── data/  # JSON metadata catalogs
+│           └── lib/   # Filter and parsing utilities
+└── packages/
+    └── ui/            # Shared component library
 ```
 
-## Available Scripts
-
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run dev:web`: Start only the web application
-- `bun run check-types`: Check TypeScript types across all apps
+---
