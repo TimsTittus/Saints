@@ -240,5 +240,97 @@
       "booksellers"
     ],
     "excerpt": "Dominican friar and supreme theologian of the Catholic Church, whose Summa Theologica synthesized faith and reason into a masterwork of scholasticism."
+  },
+  {
+    "id": "alphonsa-muttathupadathu",
+    "name": "Saint Alphonsa Muttathupadathu",
+    "shortName": "Alphonsa Muttathupadathu",
+    "letter": "A",
+    "category": "Saint",
+    "feastDay": "July 28",
+    "birthYear": 1910,
+    "deathYear": 1946,
+    "country": "India",
+    "region": "Asia",
+    "coordinates": {
+      "lat": 9.6961,
+      "lng": 76.7268
+    },
+    "thumbUrl": "/images/saints/thumbs/alphonsa-muttathupadathu.png",
+    "patronage": [
+      "against illnesses",
+      "sick people",
+      "Bharananganam"
+    ],
+    "excerpt": "Franciscan Clarist nun and India's first native female saint, revered as a patron against physical illnesses for her patient endurance of suffering."
+  },
+  {
+    "id": "kuriakose-elias-chavara",
+    "name": "Saint Kuriakose Elias Chavara",
+    "shortName": "Kuriakose Elias Chavara",
+    "letter": "K",
+    "category": "Saint",
+    "feastDay": "January 3",
+    "birthYear": 1805,
+    "deathYear": 1871,
+    "country": "India",
+    "region": "Asia",
+    "coordinates": {
+      "lat": 9.5147,
+      "lng": 76.3883
+    },
+    "thumbUrl": "/images/saints/thumbs/kuriakose-elias-chavara.png",
+    "patronage": [
+      "educators",
+      "social reformers",
+      "printers"
+    ],
+    "excerpt": "Visionary priest, social reformer, and co-founder of the Carmelites of Mary Immaculate, who championed education for all classes in Kerala."
+  },
+  {
+    "id": "euphrasia-eluvathingal",
+    "name": "Saint Euphrasia Eluvathingal",
+    "shortName": "Euphrasia Eluvathingal",
+    "letter": "E",
+    "category": "Saint",
+    "feastDay": "August 29",
+    "birthYear": 1877,
+    "deathYear": 1952,
+    "country": "India",
+    "region": "Asia",
+    "coordinates": {
+      "lat": 10.4907,
+      "lng": 76.2343
+    },
+    "thumbUrl": "/images/saints/thumbs/euphrasia-eluvathingal.png",
+    "patronage": [
+      "interior peace",
+      "prayer life",
+      "those in mental distress"
+    ],
+    "excerpt": "Carmelite nun deeply devoted to the Sacred Heart and the Blessed Sacrament, known as the 'Praying Mother' for her contemplative life of silent prayer."
+  },
+  {
+    "id": "mariam-thresia-chiramel",
+    "name": "Saint Mariam Thresia Chiramel",
+    "shortName": "Mariam Thresia Chiramel",
+    "letter": "M",
+    "category": "Saint",
+    "feastDay": "June 8",
+    "birthYear": 1876,
+    "deathYear": 1926,
+    "country": "India",
+    "region": "Asia",
+    "coordinates": {
+      "lat": 10.2872,
+      "lng": 76.2917
+    },
+    "thumbUrl": "/images/saints/thumbs/mariam-thresia-chiramel.png",
+    "patronage": [
+      "families",
+      "the sick",
+      "marginalized people"
+    ],
+    "excerpt": "Founder of the Congregation of the Holy Family, she dedicated her life to helping poor, sick, and marginalized families in their homes."
   }
 ]

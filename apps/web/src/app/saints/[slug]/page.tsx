@@ -21,6 +21,10 @@ import AugustineContent, * as AugustineMeta from "@/content/saints/augustine-of-
 import ThereseContent, * as ThereseMeta from "@/content/saints/therese-of-lisieux.mdx";
 import AnthonyContent, * as AnthonyMeta from "@/content/saints/anthony-of-padua.mdx";
 import CatherineContent, * as CatherineMeta from "@/content/saints/catherine-of-siena.mdx";
+import AlphonsaContent, * as AlphonsaMeta from "@/content/saints/alphonsa-muttathupadathu.mdx";
+import ChavaraContent, * as ChavaraMeta from "@/content/saints/kuriakose-elias-chavara.mdx";
+import EuphrasiaContent, * as EuphrasiaMeta from "@/content/saints/euphrasia-eluvathingal.mdx";
+import MariamContent, * as MariamMeta from "@/content/saints/mariam-thresia-chiramel.mdx";
 
 type MDXModule = {
   default: React.ComponentType<{ components?: Record<string, React.ComponentType<unknown>> }>;
@@ -38,6 +42,10 @@ const CONTENT_MAP: Record<string, MDXModule> = {
   "therese-of-lisieux": { ...ThereseMeta, default: ThereseContent },
   "anthony-of-padua": { ...AnthonyMeta, default: AnthonyContent },
   "catherine-of-siena": { ...CatherineMeta, default: CatherineContent },
+  "alphonsa-muttathupadathu": { ...AlphonsaMeta, default: AlphonsaContent },
+  "kuriakose-elias-chavara": { ...ChavaraMeta, default: ChavaraContent },
+  "euphrasia-eluvathingal": { ...EuphrasiaMeta, default: EuphrasiaContent },
+  "mariam-thresia-chiramel": { ...MariamMeta, default: MariamContent },
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
