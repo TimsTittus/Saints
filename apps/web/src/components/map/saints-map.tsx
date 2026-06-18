@@ -49,6 +49,20 @@ export default function SaintsMap({ saints }: SaintsMapProps) {
     };
   }, [selectedSaint, isFullscreen]);
 
+  // Handle window resizing to invalidate Leaflet map size
+  useEffect(() => {
+    if (!mapRef.current || !mapLoaded) return;
+    const handleResize = () => {
+      if (mapRef.current) {
+        mapRef.current.invalidateSize();
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [mapLoaded]);
+
   // 2. Initialize Map instance
   useEffect(() => {
     if (!mapLoaded || !L || !mapContainerRef.current || mapRef.current) return;
@@ -136,8 +150,9 @@ export default function SaintsMap({ saints }: SaintsMapProps) {
 
     // Fit map bounds to show all markers with padding
     if (saintsWithCoords.length > 0) {
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
       map.fitBounds(bounds, {
-        padding: [50, 50],
+        padding: isMobile ? [20, 20] : [50, 50],
         maxZoom: 7, // Avoid zooming in too close if only one marker
       });
     }
@@ -150,7 +165,7 @@ export default function SaintsMap({ saints }: SaintsMapProps) {
           "transition-all duration-300 overflow-hidden glass",
           isFullscreen
             ? "fixed inset-0 z-[9998] w-screen h-screen rounded-none mt-0 border-none"
-            : "relative w-full h-[600px] rounded-2xl border border-white/60 shadow-lg mt-6"
+            : "relative w-full h-[450px] sm:h-[600px] rounded-2xl border border-white/60 shadow-lg mt-6"
         )}
       >
         {/* Background soft lighting */}

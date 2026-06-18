@@ -112,6 +112,26 @@ export default function FilterBar({
             )}
           </div>
 
+          {/* Mobile View Mode Toggle */}
+          <div className="flex sm:hidden items-center w-full rounded-lg border border-white/70 bg-white/50 backdrop-blur-sm p-0.5 gap-0.5 shadow-sm">
+            {(["grid", "alpha", "map"] as ViewMode[]).map((mode) => (
+              <button
+                key={mode}
+                type="button"
+                onClick={() => onViewModeChange(mode)}
+                className={cn(
+                  "flex-1 rounded-md py-2 text-xs font-medium transition-all duration-150 text-center cursor-pointer",
+                  viewMode === mode
+                    ? "bg-amber-500 text-white shadow-sm"
+                    : "text-slate-600 hover:text-slate-800"
+                )}
+                aria-pressed={viewMode === mode}
+              >
+                {mode === "grid" ? "Grid" : mode === "alpha" ? "A–Z" : "Map"}
+              </button>
+            ))}
+          </div>
+
           {/* Row 2: Alpha filter (desktop) */}
           <div className="hidden sm:block">
             <AlphaFilter
