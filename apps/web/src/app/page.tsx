@@ -38,7 +38,7 @@ export default function HomePage() {
   );
 
   const availableLetters = useMemo(
-    () => getActiveLetters(filterSaints(ALL_SAINTS, { ...filters, letter: null })),
+    () => Array.from(getActiveLetters(filterSaints(ALL_SAINTS, { ...filters, letter: null }))),
     [filters]
   );
 

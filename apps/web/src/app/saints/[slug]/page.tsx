@@ -142,7 +142,7 @@ export default async function SaintDetailPage({ params }: PageProps) {
       {/* Two-column layout */}
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_288px]">
         {/* Left: prose */}
-        <article aria-label={`Biography of ${entry.name}`}>
+        <article className="order-2 lg:order-1" aria-label={`Biography of ${entry.name}`}>
           {/* Title row */}
           <div className="mb-6">
             <h1
@@ -175,7 +175,7 @@ export default async function SaintDetailPage({ params }: PageProps) {
         </article>
 
         {/* Right: infobox */}
-        <aside className="lg:sticky lg:top-[calc(var(--header-height)+1rem)] self-start">
+        <aside className="order-1 lg:order-2 lg:sticky lg:top-[calc(var(--header-height)+1rem)] self-start">
           <SaintInfobox
             frontmatter={{
               id: entry.id,

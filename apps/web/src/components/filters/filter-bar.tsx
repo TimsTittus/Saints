@@ -15,7 +15,7 @@ import { cn } from "@Saints/ui/lib/utils";
 interface FilterBarProps {
   filters: FilterState;
   onFiltersChange: (filters: FilterState) => void;
-  availableLetters: Set<string>;
+  availableLetters: string[];
   viewMode: ViewMode;
   onViewModeChange: (mode: ViewMode) => void;
   totalCount: number;
