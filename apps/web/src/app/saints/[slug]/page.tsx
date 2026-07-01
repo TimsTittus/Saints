@@ -25,6 +25,7 @@ import AlphonsaContent, * as AlphonsaMeta from "@/content/saints/alphonsa-muttat
 import ChavaraContent, * as ChavaraMeta from "@/content/saints/kuriakose-elias-chavara.mdx";
 import EuphrasiaContent, * as EuphrasiaMeta from "@/content/saints/euphrasia-eluvathingal.mdx";
 import MariamContent, * as MariamMeta from "@/content/saints/mariam-thresia-chiramel.mdx";
+import FaustinaContent, * as FaustinaMeta from "@/content/saints/faustina-kowalska.mdx";
 
 type MDXModule = {
   default: React.ComponentType<{ components?: Record<string, React.ComponentType<unknown>> }>;
@@ -46,6 +47,7 @@ const CONTENT_MAP: Record<string, MDXModule> = {
   "kuriakose-elias-chavara": { ...ChavaraMeta, default: ChavaraContent },
   "euphrasia-eluvathingal": { ...EuphrasiaMeta, default: EuphrasiaContent },
   "mariam-thresia-chiramel": { ...MariamMeta, default: MariamContent },
+  "faustina-kowalska": { ...FaustinaMeta, default: FaustinaContent },
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
