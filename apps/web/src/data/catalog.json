@@ -544,5 +544,51 @@
       "Alcoholics"
     ],
     "excerpt": "The Apostle chosen by lots to replace Judas Iscariot and restore the number of the Twelve."
+  },
+  {
+    "id": "philip-the-apostle",
+    "name": "Saint Philip the Apostle",
+    "shortName": "Philip the Apostle",
+    "letter": "P",
+    "category": "Apostle",
+    "feastDay": "May 3",
+    "birthYear": null,
+    "deathYear": 80,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8872,
+      "lng": 35.6264
+    },
+    "thumbUrl": "/images/saints/philip-the-apostle.png",
+    "patronage": [
+      "Hat Makers",
+      "Pastry Chefs",
+      "Uruguay"
+    ],
+    "excerpt": "One of the Twelve Apostles, who personally introduced Bartholomew to Jesus, and was martyred in Hierapolis."
+  },
+  {
+    "id": "simon-the-zealot",
+    "name": "Saint Simon the Zealot",
+    "shortName": "Simon the Zealot",
+    "letter": "S",
+    "category": "Apostle",
+    "feastDay": "October 28",
+    "birthYear": null,
+    "deathYear": 107,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.7940,
+      "lng": 34.9896
+    },
+    "thumbUrl": "/images/saints/simon-the-zealot.png",
+    "patronage": [
+      "Tanners",
+      "Sawyers",
+      "Woodcutters"
+    ],
+    "excerpt": "One of the Twelve Apostles, known for his zeal for the law, who preached and suffered martyrdom in Persia."
   }
 ]

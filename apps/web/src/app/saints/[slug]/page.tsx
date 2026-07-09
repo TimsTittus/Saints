@@ -34,6 +34,8 @@ import JohnContent, * as JohnMeta from "@/content/saints/john-the-apostle.mdx";
 import JudeContent, * as JudeMeta from "@/content/saints/jude-thaddeus.mdx";
 import MatthewContent, * as MatthewMeta from "@/content/saints/matthew-the-apostle.mdx";
 import MatthiasContent, * as MatthiasMeta from "@/content/saints/matthias-the-apostle.mdx";
+import PhilipContent, * as PhilipMeta from "@/content/saints/philip-the-apostle.mdx";
+import SimonContent, * as SimonMeta from "@/content/saints/simon-the-zealot.mdx";
 
 type MDXModule = {
   default: React.ComponentType<{ components?: Record<string, React.ComponentType<unknown>> }>;
@@ -64,6 +66,8 @@ const CONTENT_MAP: Record<string, MDXModule> = {
   "jude-thaddeus": { ...JudeMeta, default: JudeContent },
   "matthew-the-apostle": { ...MatthewMeta, default: MatthewContent },
   "matthias-the-apostle": { ...MatthiasMeta, default: MatthiasContent },
+  "philip-the-apostle": { ...PhilipMeta, default: PhilipContent },
+  "simon-the-zealot": { ...SimonMeta, default: SimonContent },
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
