@@ -8,6 +8,7 @@ const categoryStyles: Record<Category, string> = {
   Martyr: "bg-red-100/80 text-red-800 border-red-300/60",
   Confessor: "bg-green-100/80 text-green-800 border-green-300/60",
   Doctor: "bg-indigo-100/80 text-indigo-800 border-indigo-300/60",
+  Apostle: "bg-cyan-100/80 text-cyan-800 border-cyan-300/60",
 };
 
 interface BadgeProps {

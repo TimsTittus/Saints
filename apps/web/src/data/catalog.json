@@ -355,5 +355,28 @@
       "City of Łódź"
     ],
     "excerpt": "A Polish nun whose visions of Jesus inspired the Divine Mercy devotion, bringing a message of God's immense love and mercy for souls."
+  },
+  {
+    "id": "saint-peter",
+    "name": "Saint Peter",
+    "shortName": "Saint Peter",
+    "letter": "S",
+    "category": "Apostle",
+    "feastDay": "June 29",
+    "birthYear": null,
+    "deathYear": 64,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 41.9022,
+      "lng": 12.4539
+    },
+    "thumbUrl": "/images/saints/thumbs/saint-peter.png",
+    "patronage": [
+      "Popes",
+      "Fishermen",
+      "Rome"
+    ],
+    "excerpt": "One of Jesus Christ's Twelve Apostles and the first Pope, who preached boldly and was martyred in Rome."
   }
 ]
