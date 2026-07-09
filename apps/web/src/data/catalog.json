@@ -378,5 +378,29 @@
       "Rome"
     ],
     "excerpt": "One of Jesus Christ's Twelve Apostles and the first Pope, who preached boldly and was martyred in Rome."
+  },
+  {
+    "id": "bartholomew-the-apostle",
+    "name": "Saint Bartholomew the Apostle",
+    "shortName": "Bartholomew",
+    "letter": "B",
+    "category": "Apostle",
+    "feastDay": "August 24",
+    "birthYear": null,
+    "deathYear": 68,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8072,
+      "lng": 35.3375
+    },
+    "thumbUrl": "/images/saints/bartholomew-the-apostle.png",
+    "patronage": [
+      "Armenia",
+      "Bookbinders",
+      "Leather Workers",
+      "Tanners"
+    ],
+    "excerpt": "One of the Twelve Apostles, traditionally identified as Nathanael, praised by Jesus for his honesty and martyred in Armenia."
   }
 ]
