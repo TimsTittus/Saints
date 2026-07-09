@@ -448,5 +448,54 @@
       "Pharmacists"
     ],
     "excerpt": "One of the Twelve Apostles, traditionally identified as the first Bishop of Jerusalem and author of the Epistle of James."
+  },
+  {
+    "id": "john-the-apostle",
+    "name": "Saint John the Apostle",
+    "shortName": "John the Apostle",
+    "letter": "J",
+    "category": "Apostle",
+    "feastDay": "December 27",
+    "birthYear": null,
+    "deathYear": 100,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8872,
+      "lng": 35.6264
+    },
+    "thumbUrl": "/images/saints/john-the-apostle.png",
+    "patronage": [
+      "Authors",
+      "Writers",
+      "Theologians",
+      "Publishers",
+      "Friendship"
+    ],
+    "excerpt": "The beloved disciple of Jesus, traditionally the author of the Fourth Gospel and Revelation, and the only Apostle to die a natural death."
+  },
+  {
+    "id": "jude-thaddeus",
+    "name": "Saint Jude Thaddeus",
+    "shortName": "Jude Thaddeus",
+    "letter": "J",
+    "category": "Apostle",
+    "feastDay": "October 28",
+    "birthYear": null,
+    "deathYear": 65,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.7940,
+      "lng": 34.9896
+    },
+    "thumbUrl": "/images/saints/jude-thaddeus.png",
+    "patronage": [
+      "Hopeless Causes",
+      "Desperate Situations",
+      "Hospitals",
+      "Impossible Cases"
+    ],
+    "excerpt": "One of the Twelve Apostles, traditionally the author of the Letter of Jude, and the widely venerated patron saint of hopeless causes."
   }
 ]
