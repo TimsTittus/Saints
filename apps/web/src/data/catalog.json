@@ -402,5 +402,28 @@
       "Tanners"
     ],
     "excerpt": "One of the Twelve Apostles, traditionally identified as Nathanael, praised by Jesus for his honesty and martyred in Armenia."
+  },
+  {
+    "id": "james-the-greater",
+    "name": "Saint James the Greater",
+    "shortName": "James the Greater",
+    "letter": "J",
+    "category": "Apostle",
+    "feastDay": "July 25",
+    "birthYear": null,
+    "deathYear": 44,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8872,
+      "lng": 35.6264
+    },
+    "thumbUrl": "/images/saints/james-the-greater.png",
+    "patronage": [
+      "Spain",
+      "Pilgrims",
+      "Veterinarians"
+    ],
+    "excerpt": "One of the Twelve Apostles and a member of Jesus' inner circle, who was the first Apostle to be martyred."
   }
 ]
