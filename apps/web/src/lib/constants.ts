@@ -31,10 +31,10 @@ export type EraPeriod = (typeof ERA_PERIODS)[number]["label"];
 
 export const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-export const VIEW_MODES = ["grid", "alpha", "map"] as const;
+const VIEW_MODES = ["grid", "alpha", "map"] as const;
 export type ViewMode = (typeof VIEW_MODES)[number];
 
-export const SORT_OPTIONS = [
+const SORT_OPTIONS = [
   { value: "name-asc", label: "Name A–Z" },
   { value: "name-desc", label: "Name Z–A" },
   { value: "year-asc", label: "Earliest first" },

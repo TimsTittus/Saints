@@ -590,5 +590,53 @@
       "Woodcutters"
     ],
     "excerpt": "One of the Twelve Apostles, known for his zeal for the law, who preached and suffered martyrdom in Persia."
+  },
+  {
+    "id": "thomas-the-apostle",
+    "name": "Saint Thomas the Apostle",
+    "shortName": "Thomas the Apostle",
+    "letter": "T",
+    "category": "Apostle",
+    "feastDay": "July 3",
+    "birthYear": null,
+    "deathYear": 72,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.7940,
+      "lng": 34.9896
+    },
+    "thumbUrl": "/images/saints/thomas-the-apostle.png",
+    "patronage": [
+      "India",
+      "Architects",
+      "Builders",
+      "Surveyors"
+    ],
+    "excerpt": "One of the Twelve Apostles, who made the famous confession 'My Lord and my God!', and pioneered the faith in India."
+  },
+  {
+    "id": "saint-andrew",
+    "name": "Saint Andrew",
+    "shortName": "Saint Andrew",
+    "letter": "A",
+    "category": "Apostle",
+    "feastDay": "November 30",
+    "birthYear": null,
+    "deathYear": 60,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8872,
+      "lng": 35.6264
+    },
+    "thumbUrl": "/images/saints/saint-andrew.png",
+    "patronage": [
+      "Scotland",
+      "Greece",
+      "Fishermen",
+      "Singers"
+    ],
+    "excerpt": "The first Apostle called by Jesus and the brother of Saint Peter, who was martyred on an X-shaped cross in Greece."
   }
 ]

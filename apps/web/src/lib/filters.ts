@@ -108,12 +108,6 @@ export function groupByLetter(
   }, {});
 }
 
-export function getAvailableCountries(saints: SaintCatalogEntry[]): string[] {
-  return [...new Set(saints.map((s) => s.country))].sort((a, b) =>
-    a.localeCompare(b, "en")
-  );
-}
-
 export function getActiveLetters(saints: SaintCatalogEntry[]): Set<string> {
   return new Set(saints.map((s) => s.letter));
 }

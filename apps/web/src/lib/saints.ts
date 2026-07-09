@@ -17,7 +17,7 @@ export interface SaintCatalogEntry {
   excerpt: string;
 }
 
-export interface SaintInfobox {
+interface SaintInfobox {
   veneratedIn: string;
   feastDay: string;
   bornDate: string;
