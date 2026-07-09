@@ -425,5 +425,28 @@
       "Veterinarians"
     ],
     "excerpt": "One of the Twelve Apostles and a member of Jesus' inner circle, who was the first Apostle to be martyred."
+  },
+  {
+    "id": "james-the-less",
+    "name": "Saint James the Less",
+    "shortName": "James the Less",
+    "letter": "J",
+    "category": "Apostle",
+    "feastDay": "May 3",
+    "birthYear": null,
+    "deathYear": 62,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.7940,
+      "lng": 34.9896
+    },
+    "thumbUrl": "/images/saints/james-the-less.png",
+    "patronage": [
+      "Fullers",
+      "Hat makers",
+      "Pharmacists"
+    ],
+    "excerpt": "One of the Twelve Apostles, traditionally identified as the first Bishop of Jerusalem and author of the Epistle of James."
   }
 ]
