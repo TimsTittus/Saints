@@ -497,5 +497,52 @@
       "Impossible Cases"
     ],
     "excerpt": "One of the Twelve Apostles, traditionally the author of the Letter of Jude, and the widely venerated patron saint of hopeless causes."
+  },
+  {
+    "id": "matthew-the-apostle",
+    "name": "Saint Matthew the Apostle",
+    "shortName": "Matthew the Apostle",
+    "letter": "M",
+    "category": "Apostle",
+    "feastDay": "September 21",
+    "birthYear": null,
+    "deathYear": 90,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 32.8808,
+      "lng": 35.5401
+    },
+    "thumbUrl": "/images/saints/matthew-the-apostle.png",
+    "patronage": [
+      "Accountants",
+      "Bankers",
+      "Tax Collectors",
+      "Civil Servants"
+    ],
+    "excerpt": "A tax collector called by Jesus, traditionally the author of the First Gospel and martyred for preaching the faith."
+  },
+  {
+    "id": "matthias-the-apostle",
+    "name": "Saint Matthias the Apostle",
+    "shortName": "Matthias the Apostle",
+    "letter": "M",
+    "category": "Apostle",
+    "feastDay": "May 14",
+    "birthYear": null,
+    "deathYear": 80,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 31.7683,
+      "lng": 35.2137
+    },
+    "thumbUrl": "/images/saints/matthias-the-apostle.png",
+    "patronage": [
+      "Carpenters",
+      "Tailors",
+      "Alcoholics"
+    ],
+    "excerpt": "The Apostle chosen by lots to replace Judas Iscariot and restore the number of the Twelve."
   }
 ]
