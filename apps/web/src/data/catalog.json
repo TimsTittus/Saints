@@ -638,5 +638,54 @@
       "Singers"
     ],
     "excerpt": "The first Apostle called by Jesus and the brother of Saint Peter, who was martyred on an X-shaped cross in Greece."
+  },
+  {
+    "id": "saint-mark",
+    "name": "Saint Mark the Evangelist",
+    "shortName": "Mark the Evangelist",
+    "letter": "M",
+    "category": "Evangelist",
+    "feastDay": "April 25",
+    "birthYear": null,
+    "deathYear": 68,
+    "country": "Israel",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 31.7683,
+      "lng": 35.2137
+    },
+    "thumbUrl": "/images/saints/saint-mark.png",
+    "patronage": [
+      "Venice",
+      "Egypt",
+      "Notaries",
+      "Lawyers",
+      "Prisoners"
+    ],
+    "excerpt": "Author of the earliest Gospel, close companion of Saint Peter, and founder of the Church of Alexandria."
+  },
+  {
+    "id": "saint-luke",
+    "name": "Saint Luke the Evangelist",
+    "shortName": "Luke the Evangelist",
+    "letter": "L",
+    "category": "Evangelist",
+    "feastDay": "October 18",
+    "birthYear": null,
+    "deathYear": 84,
+    "country": "Turkey",
+    "region": "Middle East",
+    "coordinates": {
+      "lat": 36.2023,
+      "lng": 36.1613
+    },
+    "thumbUrl": "/images/saints/saint-luke.png",
+    "patronage": [
+      "Physicians",
+      "Surgeons",
+      "Artists",
+      "Painters"
+    ],
+    "excerpt": "Physician and missionary companion of Saint Paul, author of the Gospel of Luke and the Acts of the Apostles."
   }
 ]

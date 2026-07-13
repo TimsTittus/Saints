@@ -6,6 +6,7 @@ export const CATEGORIES = [
   "Confessor",
   "Doctor",
   "Apostle",
+  "Evangelist",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];

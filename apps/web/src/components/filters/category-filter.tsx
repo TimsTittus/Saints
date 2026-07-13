@@ -16,6 +16,7 @@ const categoryColors: Record<Category, { active: string; inactive: string }> = {
   Confessor: { active: "bg-green-500 text-white border-green-500", inactive: "border-green-300/60 text-green-700 hover:bg-green-50" },
   Doctor: { active: "bg-indigo-500 text-white border-indigo-500", inactive: "border-indigo-300/60 text-indigo-700 hover:bg-indigo-50" },
   Apostle: { active: "bg-cyan-500 text-white border-cyan-500", inactive: "border-cyan-300/60 text-cyan-700 hover:bg-cyan-50" },
+  Evangelist: { active: "bg-orange-500 text-white border-orange-500", inactive: "border-orange-300/60 text-orange-700 hover:bg-orange-50" },
 };
 
 export default function CategoryFilter({ selected, onChange }: CategoryFilterProps) {
