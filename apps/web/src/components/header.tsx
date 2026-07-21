@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { GoogleTranslate } from "./google-translate";
 import { ModeToggle } from "./mode-toggle";
 import { cn } from "@Saints/ui/lib/utils";
 
@@ -74,6 +75,7 @@ export default function Header() {
 
         {/* Right controls */}
         <div className="flex items-center gap-2">
+          <GoogleTranslate />
           <ModeToggle />
         </div>
       </div>
